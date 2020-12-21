@@ -78,6 +78,11 @@ const routes = [
         name: 'Css',
         component: () => import('@/pages/Css/index.vue')
     },
+    {
+        path: '/ES6',
+        name: 'ES6',
+        component: () => import('@/pages/ES6/index.vue')
+    },
     { path: '*', name: 'NotFound', component: () => import('../views/NotFound.vue') },
 ]
 

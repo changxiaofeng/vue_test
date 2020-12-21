@@ -29,7 +29,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 第二部：cd TEST 
              git init
 第三步：把项目粘贴到这个本地Git仓库；
-             git add .   把该目录下的所有文件添加到仓库。这个过程可以用git status来查看当前状态；
+            git add .   把该目录下的所有文件添加到仓库(不包括删除的文件)。这个过程可以用git status来查看当前状态；
+            git add -A  提交所有变化
+            git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
 第四步：git commit -m "这里写本次提交的注释"    用git commit把项目提交到仓库；
              
 	截至到此，我们本地Git仓库的工作做完了，下面就到了链接远程仓库（也就是连接Github）;
@@ -45,3 +47,11 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 第九步：把本地库的所有内容推送到远程仓库（也就是Github）；
              $ git push -u origin master      由于新建的远程仓库是空的，所以要加上-u这个参数
              $ git push origin master           下次再从本地库上传
+
+
+
+
+
+
+git基本用法：
+git stash   回退到上次上传代码的状态

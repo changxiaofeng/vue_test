@@ -36,6 +36,10 @@
                 <template slot="title"><Icon type="ios-navigate"></Icon>web前端进阶</template>
                 <MenuItem name="3-1"> <router-link to="/Css"> Css </router-link> </MenuItem>
             </Submenu>
+            <Submenu name="5">
+                <template slot="title"><Icon type="ios-navigate"></Icon>ES6</template>
+                <MenuItem name="5-1"> <router-link to="/ES6"> ES6 </router-link> </MenuItem>
+            </Submenu>
         </Menu>
     </Sider>
 </template>
