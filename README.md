@@ -39,7 +39,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 	截至到此，我们本地Git仓库的工作做完了，下面就到了链接远程仓库（也就是连接Github）;
 
 # 第五步：创建SSH KEY。
-          先看下C盘目录下有没有.ssh目录，有的话看下里卖弄有没有id_rsa和id_rsa.pub这两个文件，有就跳到下一步，
+          先看下C盘目录下有没有.ssh目录，有的话看下目录里有没有id_rsa和id_rsa.pub这两个文件，有就跳到下一步，
           没有就通过下面命令创建。
         （1）$ ssh-keygen -t rsa -C "youremail@example.com"    然后一路回车，创建成功后，就可以在.ssh目录下看到文件了；
 # 第六步：Github -> Settings -> SSH and GPG KEYS -> New SSH key -> Title随便填，把刚才id_rsa.pub里面的内容复制到Title
@@ -48,9 +48,18 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 # 第八步：把Github创建的仓库和本地仓库进行关联；
           $ git remote add origin https://github.com/changxiaofeng/vue_test.git
 # 第九步：把本地库的所有内容推送到远程仓库（也就是Github）；
-          $ git push -u origin master      由于新建的远程仓库是空的，所以要加上-u这个参数
+          $ git push -u origin       由于新建的远程仓库是空的，所以要加上-u这个参数
           $ git push origin master           下次再从本地库上传
-
+master
 # git基本用法：
 git stash   回退到上次上传代码的状态
+git pull    更新代码
 ``
+
+
+git remote -v  查看项目远程地址
+git branch -a  查看远程项目所有分支，红颜色分支代表当前所在分支，其他的所列的就是所有分支了。
+git log        查看历史提交信息。
+git status     检查下修改了什么内容。
+git remote show origin  查看当前仓库基本信息。
+
