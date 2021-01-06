@@ -24,11 +24,12 @@
                     </div>
                 </Menu> -->
                 <div class="topbar">
-                    <img
+                    <!-- <img
                         src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-5-Vue/6/logo.png"
                         alt=""
                         class="logo"
-                    />
+                    /> -->
+                    <p class="title">前端学习知识整理</p>
                     <div class="options">
                         <button class="share"></button>
                         <button class="menu"></button>
@@ -82,6 +83,9 @@ export default {
     .topbar .logo {
         width: 61px;
         height: 22px;
+    }
+    .topbar .title{
+        color: #fff;
     }
     .topbar .options {
         display: flex;

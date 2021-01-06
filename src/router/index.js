@@ -83,6 +83,16 @@ const routes = [
         name: 'ES6',
         component: () => import('@/pages/ES6/index.vue')
     },
+    {
+        path: '/ES6Command',
+        name: 'ES6Command',
+        component: () => import('@/pages/ES6Command/index.vue')
+    },
+    {
+        path: '/Decon',
+        name: 'Decon',
+        component: () => import('@/pages/Decon/index.vue')   
+    },
     { path: '*', name: 'NotFound', component: () => import('../views/NotFound.vue') },
 ]
 

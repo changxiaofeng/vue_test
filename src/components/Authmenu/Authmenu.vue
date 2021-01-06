@@ -38,7 +38,9 @@
             </Submenu>
             <Submenu name="5">
                 <template slot="title"><Icon type="ios-navigate"></Icon>ES6</template>
-                <MenuItem name="5-1"> <router-link to="/ES6"> ES6 </router-link> </MenuItem>
+                <MenuItem name="5-1"> <router-link to="/ES6Command"> ES6简介 </router-link> </MenuItem>
+                <MenuItem name="5-2"> <router-link to="/ES6"> let和const命令 </router-link> </MenuItem>
+                <MenuItem name="5-3"> <router-link to="/Decon"> 变量的解构赋值 </router-link> </MenuItem>
             </Submenu>
         </Menu>
     </Sider>
@@ -50,7 +52,7 @@ export default {
     name: 'Authmenu',
     data () {
         return{
-             
+            
         }
     }
 }
