@@ -23,9 +23,11 @@
 
 <script>
     export default{
-        name: 'ComponentSlot',
+        name: 'Introduction',
         data: function() {
+            return{
 
+            }
         }
     }
 </script>

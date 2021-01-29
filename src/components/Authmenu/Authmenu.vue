@@ -1,6 +1,6 @@
 <template>
     <Sider hide-trigger :style="{background: '#fff'}">
-        <Menu active-name="0" theme="light" width="auto" :open-names="['1']">
+        <Menu active-name="0" :theme="theme2" width="auto" :open-names="['1']">
             <MenuItem name="0"><a href="http://localhost:8080/#/">首页</a></MenuItem>
             <Submenu name="1">
                 <template slot="title"><Icon type="ios-keypad"></Icon>Vue入门到精通</template>
@@ -8,7 +8,7 @@
                 <MenuItem name="1-2"> <router-link :to="{name: 'Watch'}">Vue双向绑定</router-link> </MenuItem>
                 <MenuItem name="1-3"> <router-link to="/Temp">Vue Template</router-link> </MenuItem>
                 <MenuItem name="1-4"> <router-link to="/Computed">Vue动态Class、Style</router-link> </MenuItem>
-                <MenuItem name="1-5"> <router-link to="/Component">Vue组件</router-link> </MenuItem>
+                <MenuItem name="1-5"> <router-link to="/Assembly">Vue组件</router-link> </MenuItem>
                 <MenuItem name="1-6"> <router-link to="/ComRouter">Vue-Router</router-link> </MenuItem>
                 <MenuItem name="1-7"> <router-link to="/Example">实战-可互动的qq空间动态</router-link> </MenuItem>
             </Submenu>
@@ -52,7 +52,7 @@ export default {
     name: 'Authmenu',
     data () {
         return{
-            
+            theme2: 'dark'
         }
     }
 }

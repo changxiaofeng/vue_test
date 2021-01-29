@@ -9,16 +9,16 @@
         </TabPane>
         <TabPane label="条件渲染语句" name="name3">
            <div>
-                <p>v-if</p>
+                <h4>v-if</h4>
                 <span v-if="isShow">{{message}}</span>
             </div>
             <div>
-                <p>v-else</p>
+                <h4>v-else</h4>
                 <span v-if="isShow">{{message}}</span>
                 <span v-else>{{defaultMessage }}</span>
             </div>
             <div>
-                <p>v-else-if</p>
+                <h4>v-else-if</h4>
                 <span v-if="questions[0].type==='fruits'">{{questions[0].content}}</span>
                 <span v-else-if="questions[1].type==='vegetables'">{{questions[1].content}}</span>
                 <span v-else>这个食物没有加载进来。。。</span>
@@ -29,9 +29,14 @@
                 <p v-else>题目还没有加载进来...</p>
             </div>
             <div>
-                <p>v-show</p>
-                <p>注意：v-show用法和v-if相同，都是在满足条件的时候显示内容。
-                    但是，不同点：v-show指令只是将标签的display设置为none；v-if指令，如果不满足条件，则此标签在dom中根本不存在。</p>
+                <h4>v-show</h4>
+                <Alert type="warning" show-icon>
+                    <template slot="desc">
+                        注意：v-show和v-if用法异同点
+                        <p>相同点：都是在满足条件的时候显示内容。</p>
+                        <p>不同点：v-show指令只是将标签的display设置为none；v-if指令，如果不满足条件，则此标签在dom中根本不存在。</p>
+                    </template>
+                </Alert>
             </div>
 
             <div class="img-box">
@@ -70,7 +75,7 @@
             </ul>
         </TabPane>
     </Tabs>
-</template>    
+</template>
 
 <script>
     export default{
@@ -164,6 +169,7 @@
         },
         methods:{
             isShow(){
+                console.log("this.message的值为"+this.message);
                 if(!this.message) 
                     return false;
                 return true;

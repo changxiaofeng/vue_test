@@ -24,7 +24,7 @@
 
 <script>
 export default {
-    name: 'ExampleModel',
+    name: 'Example',
     props: ['visible'],
     methods: {
         // 通过 update:visible 的模式触发事件，改变 App.vue 中 visible 的值

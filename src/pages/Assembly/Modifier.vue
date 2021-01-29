@@ -19,7 +19,7 @@
 
 <script>
     export default{
-        name: 'ComponentModifier',
+        name: 'Modifier',
         methods: {
             printTitle() {
                 alert("cilcked a title");

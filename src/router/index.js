@@ -14,7 +14,7 @@ const routes = [
     { path: '/Watch', name: 'Watch', component: () => import('@/pages/Watch/Watch') },
     { path: '/Temp', name: 'Temp', component: () => import('@/pages/Temp/Temp') },
     { path: '/Computed', name: 'Computed',component: () => import('@/pages/Computed/Computed') },
-    { path: '/Component', name: 'Component', component: () => import('@/pages/Component/Component') },
+    { path: '/Assembly', name: 'Assembly', component: () => import('@/pages/Assembly/Assembly') },
     // 路由 实例：全部课程
     { path: '/ComRouter', name: 'ComRouter', component: () => import('@/pages/ComRouter/ComRouter'),
         children: [

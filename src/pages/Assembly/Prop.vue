@@ -78,7 +78,7 @@
 
 <script>
 export default {
-    name: 'ComponentProp',
+    name: 'Prop',
     props: [
         'title',
     ],

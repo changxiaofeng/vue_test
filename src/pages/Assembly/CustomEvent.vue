@@ -83,7 +83,7 @@
 
 <script>
     export default{
-        name: 'ComponentCustomEvent',
+        name: 'CustomEvent',
         data: function() {
             return{
 

@@ -1,30 +1,30 @@
 <template>
     <Tabs value="name1">
         <TabPane label="自定义组件" name="name1">
-            <ComponentCustom></ComponentCustom>
+            <Custom></Custom>
         </TabPane>
         <TabPane label="组件单向数据流" name="name2">
-            <ComponentProp :title="title1"></ComponentProp>
+            <Prop :title="title1"></Prop>
             <h2>实例</h2>
             <HelloWorld :titlePro="title2" v-for="article in articleList" :key="article.title" :article="article"></HelloWorld>
         </TabPane>
         <TabPane label="自定义组件绑定原生事件" name="name3">
-            <ComponentModifier @click="print(article)"></ComponentModifier>
+            <Modifier @click="print(article)"></Modifier>
         </TabPane>
         <TabPane label="自定义事件" name="name4">
-            <ComponentCustomEvent></ComponentCustomEvent>
+            <CustomEvent></CustomEvent>
         </TabPane>
         <TabPane label="组件函数调用" name="name5">
             <ComponentFun></ComponentFun>
         </TabPane>
         <TabPane label="组件slot入门" name="name6">
-            <ComponentSlot></ComponentSlot>
+            <Introduction></Introduction>
         </TabPane>
         <TabPane label="组件slot进阶" name="name7">
-            <ComponentSlotAdvanced></ComponentSlotAdvanced>
+            <SlotAdvanced></SlotAdvanced>
         </TabPane>
         <TabPane label="实例" name="name8">
-            <ExampleModel :visible.sync="visible">
+            <Example :visible.sync="visible">
                 个性化内容
                 
                 <template v-slot:header>
@@ -37,7 +37,7 @@
                 <template v-slot:footer>
                     <p>Modal footer</p>
                 </template>  
-            </ExampleModel>
+            </Example>
             <Button type="primary" @click="visible = true">打开 Modal</Button>
         </TabPane>
     </Tabs>
@@ -45,26 +45,26 @@
 
 <script>
     import HelloWorld from '@/components/HelloWorld'
-    import ComponentCustom from './ComponentCustom.vue'
-    import ComponentProp from './ComponentProp.vue'
-    import ComponentModifier from './ComponentModifier.vue'
-    import ComponentCustomEvent from './ComponentCustomEvent.vue'
+    import Custom from './Custom.vue'
+    import Prop from './Prop.vue'
+    import Modifier from './Modifier.vue'
+    import CustomEvent from './CustomEvent.vue'
     import ComponentFun from './ComponentFun'
-    import ExampleModel from './ExampleModel.vue'
-    import ComponentSlot from './ComponentSlot.vue'
-    import ComponentSlotAdvanced from  './ComponentSlotAdvanced'
+    import Example from './Example.vue'
+    import Introduction from './Introduction.vue'
+    import SlotAdvanced from  './SlotAdvanced'
     export default{
-        name: 'Component',
+        name: 'Assembly',
         components: {
             HelloWorld,
-            ComponentCustom,
-            ComponentProp,
-            ComponentModifier,
-            ComponentCustomEvent,
+            Custom,
+            Prop,
+            Modifier,
+            CustomEvent,
             ComponentFun,
-            ExampleModel,
-            ComponentSlot,
-            ComponentSlotAdvanced
+            Example,
+            Introduction,
+            SlotAdvanced
         },
         data: function() {
             return {

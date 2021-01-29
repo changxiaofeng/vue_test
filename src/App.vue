@@ -69,6 +69,9 @@ export default {
         color: #2c3e50;
         /* margin-top: 60px; */
     }
+    a{
+        color: #FFFFFF;
+    }
 </style>
 
 <style scope>
@@ -111,5 +114,17 @@ export default {
         height: 15px;
         background: url(https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-5-Vue/6/menu.png)
         no-repeat center / contain;
+    }
+    h1{
+        /* margin-bottom: 50px; */
+    }
+    h2{
+        padding: 40px 0 10px 0;
+    }
+    h3, h4{
+        padding: 10px 0;
+    }
+    .textIndent{
+        text-indent: 2em;
     }
 </style>

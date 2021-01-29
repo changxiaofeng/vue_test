@@ -34,7 +34,7 @@
 
 <script>
     export default{
-        name: 'ComponentCustom',
+        name: 'Custom',
         data: function() {
             return{
 
